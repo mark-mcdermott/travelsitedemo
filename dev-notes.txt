@@ -1,0 +1,21 @@
+LOCAL
+pip3 install django
+mkdir django_test
+cd django_test
+django-admin startproject mytestsite
+cd mytestsite
+python3 manage.py runserver
+in browser, go to http://localhost:8000/
+
+AMAZON
+sudo apt-get install python34
+sudo apt-get install python3-pip
+pip3 install django
+export LC_ALL=C
+sudo pip3 install virtualenv
+git clone https://github.com/mark-mcdermott/travelsitedemo.git
+cd travelsitedemo
+cd mysite
+virtualenv venv
+source venv/bin/activate
+python3 manage.py runserver 0:8000
